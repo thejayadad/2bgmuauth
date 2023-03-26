@@ -11,26 +11,18 @@ import CardActions from '@mui/material/CardActions';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 
-
-
-const Note = () => {
+const Not = () => {
   return (
-    <div>
+    <div>Not
+
         <Card>
-            <CardHeader
-            action={
-                <IconButton>
-                <FavoriteIcon />
-                </IconButton>
-            }
-            />
-
-
+            cardkambnalkd nfbdk
+             dpbsldknb lsdkjnb label klan
+             biaknldfbka dpbsldknbl
+             blanfsdklbjna
         </Card>
-
-
     </div>
   )
 }
 
-export default Note
+export default Not
