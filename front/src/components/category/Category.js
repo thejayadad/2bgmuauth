@@ -45,7 +45,13 @@ const Category = () => {
             }
       </Tabs>
     </Box>
-    
+    <Box>
+        <Note />
+        <Note />
+        <Note />
+        <Note />
+        <Note />
+    </Box>
 
     </div>
   )

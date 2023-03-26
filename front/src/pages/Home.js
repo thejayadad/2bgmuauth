@@ -17,6 +17,7 @@ const Home = () => {
    <Box>
     <Navbar />
     <Category />
+    
    </Box>
     </Box>
   )
