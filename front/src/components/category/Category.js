@@ -47,14 +47,20 @@ const Category = () => {
             }
       </Tabs>
     </Box>
-    <Box sx={{
+    <Box
+    spacing="4"
+    sx={{
       maxWidth: "80%",
-      margin: "auto"
+      margin: "auto",
+
     }}>
     <ResponsiveMasonry
                 columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
             >
       <Masonry>
+            <Note />
+            <Note />
+            <Note />
             <Note />
       </Masonry>
      </ResponsiveMasonry>
