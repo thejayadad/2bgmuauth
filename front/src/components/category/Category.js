@@ -1,12 +1,53 @@
 import React from 'react'
-
-
-
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Note from '../note/Note';
+import Tabs, { tabsClasses } from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Button from '@mui/material/Button';
+import { useEffect } from 'react'
+import { useState } from 'react'
+import FormatListNumberedIcon from '@mui/icons-material/FormatListNumbered';
 
 
 const Category = () => {
+    const [value, setValue] = React.useState(0);
+    const [activeCategory, setActiveCategory] = useState('all')
+
+    const handleChange = (event, newValue) => {
+      setValue(newValue);
+    };
+
+    const categories = [
+        {id: "1", label: "All", icon: <FormatListNumberedIcon />, categories: "all"},
+        {id: "1", label: "Sports", icon: <FormatListNumberedIcon />, categories: "sports"},
+        {id: "1", label: "Money", icon: <FormatListNumberedIcon />, categories: "money"},
+        {id: "1", label: "Politics", icon: <FormatListNumberedIcon />, categories: "politics"},
+    ]
+
+
+
   return (
-    <div>Category</div>
+    <div>
+          <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
+      <Tabs value={value} onChange={handleChange} centered>
+            {
+                categories.map((category) => (
+                    <Tab
+                        key={category.id}
+                        icon={category.icon}
+                        label={category.label}
+                        categories={category.categories}
+                        onClick={() => setActiveCategory(prev => category)}
+
+                    />
+                ))
+            }
+      </Tabs>
+    </Box>
+    
+
+    </div>
   )
 }
 
