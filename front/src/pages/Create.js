@@ -5,7 +5,8 @@ import Footer from '../components/footer/Footer'
 import { Box } from '@mui/material'
 
 
-const Home = () => {
+
+const Create = () => {
   return (
     <Box
     sx={{
@@ -16,11 +17,23 @@ const Home = () => {
     >
    <Box>
     <Navbar />
-    <Category />
+    <Box
+    spacing="4"
+    sx={{
+      maxWidth: "80%",
+      margin: "auto",
+      display: "flex",
+      justifyContent: "center",
+      flexWrap: "wrap",
+      background: "#222"
+
+    }}>
+        Create
+    </Box>
     <Footer />
    </Box>
     </Box>
   )
 }
 
-export default Home
+export default Create

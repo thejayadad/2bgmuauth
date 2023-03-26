@@ -8,8 +8,6 @@ import Button from '@mui/material/Button';
 import { useEffect } from 'react'
 import { useState } from 'react'
 import FormatListNumberedIcon from '@mui/icons-material/FormatListNumbered';
-import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
-import Not from '../note/Not';
 
 
 const Category = () => {
@@ -52,18 +50,16 @@ const Category = () => {
     sx={{
       maxWidth: "80%",
       margin: "auto",
+      display: "flex",
+      justifyContent: "center",
+      flexWrap: "wrap",
+     
+
 
     }}>
-    <ResponsiveMasonry
-                columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
-            >
-      <Masonry>
-            <Note />
-            <Note />
-            <Note />
-            <Note />
-      </Masonry>
-     </ResponsiveMasonry>
+      <Note />
+      <Note />
+      <Note />
     </Box>
 
     </div>

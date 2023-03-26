@@ -22,7 +22,7 @@ const Note = () => {
   return (
     <div>
         <Card
-        sx={{ margin: 5 }}
+        sx={{ margin: 5, maxWidth: "350px" }}
         >
           <CardHeader
         avatar={
